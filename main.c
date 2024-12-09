@@ -3,13 +3,11 @@
 #include <math.h>
 int NNN(int n, int counting){
     if (counting==1){
-        printf("\n %d",n);
         return n;
     }
     else{
         int temp=0;
         temp=n*pow(10,counting-1);
-        printf("\ntemp %d",temp);
         return (temp+NNN(n,counting-1));
     }
 }
